@@ -129,6 +129,7 @@ u_int32_t pptp_get_if_mtu(char *if_name);
 static void pptp_start_wait_interface ();
 static void pptp_stop_wait_interface ();
 static void pptp_wait_interface_timeout (void *arg);
+static void enable_keepalive (int fd);
 
 
 /* -----------------------------------------------------------------------------
@@ -518,6 +519,8 @@ int pptp_connect(int *errorcode)
             goto fail;
         }
 
+		set_network_signature("VPN.RemoteAddress", remoteaddress, 0, 0);
+
         if (inet_aton(remoteaddress, &peeraddress) == 0) {
         
             if (pipe(resolverfds) < 0) {
@@ -578,6 +581,9 @@ int pptp_connect(int *errorcode)
                 goto fail1;
         }
 
+		/* enable keepalive on control connection. need to be done before sending data */
+		enable_keepalive(ctrlsockfd);
+
         err = pptp_outgoing_call(ctrlsockfd, 
             our_call_id, our_window, our_ppd, &peer_call_id, &peer_window, &peer_ppd);
         
@@ -598,6 +604,9 @@ int pptp_connect(int *errorcode)
         
         notice("PPTP incoming call in progress from '%s'...", remoteaddress);
         
+		/* enable keepalive on control connection. need to be done before sending data */
+		enable_keepalive(ctrlsockfd);
+
         err = pptp_incoming_call(ctrlsockfd, 
             our_call_id, our_window, our_ppd, &peer_call_id, &peer_window, &peer_ppd);
     }
@@ -642,6 +651,9 @@ int pptp_connect(int *errorcode)
         
         notice("PPTP incoming call in progress from '%s'...", remoteaddress);
 
+		/* enable keepalive on control connection. need to be done before sending data */
+		enable_keepalive(ctrlsockfd);
+
         err = pptp_incoming_call(ctrlsockfd, 
                 our_call_id, our_window, our_ppd, &peer_call_id, &peer_window, &peer_ppd);
     }
@@ -656,13 +668,6 @@ int pptp_connect(int *errorcode)
     }
     
     notice("PPTP connection established.");
-
-    /* enable keepalive on control connection */
-    if (tcp_keepalive) {
-        val = 1;
-        setsockopt(ctrlsockfd, SOL_SOCKET, SO_KEEPALIVE, &val, sizeof(val));
-        setsockopt(ctrlsockfd, IPPROTO_TCP, TCP_KEEPALIVE, &tcp_keepalive, sizeof(tcp_keepalive));
-    }
 
     /* get reachability flags of peer */
     bzero(&addr, sizeof(addr));
@@ -1196,4 +1201,17 @@ static void pptp_send_echo_request ()
     if (pptp_echo(ctrlsockfd, echo_identifier++) == -1)
         pptp_link_failure();
     echos_pending++;
+}
+
+/* -----------------------------------------------------------------------------
+----------------------------------------------------------------------------- */
+static void enable_keepalive (int fd)
+{
+	int val;
+	
+	if (tcp_keepalive) {
+		val = 1;
+		setsockopt(fd, SOL_SOCKET, SO_KEEPALIVE, &val, sizeof(val));
+		setsockopt(fd, IPPROTO_TCP, TCP_KEEPALIVE, &tcp_keepalive, sizeof(tcp_keepalive));
+	}
 }

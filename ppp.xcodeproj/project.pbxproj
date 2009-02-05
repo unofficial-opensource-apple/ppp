@@ -9,7 +9,7 @@
 /* Begin PBXAggregateTarget section */
 		23055EC705E1807F00EAB16F /* ppp (Aggregate) */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 725B05C00A0032CF000FE99A /* Build configuration list for PBXAggregateTarget "ppp (Aggregate)" */;
+			buildConfigurationList = 72DD79D4091AA0ED00EE4DEA /* Build configuration list for PBXAggregateTarget "ppp (Aggregate)" */;
 			buildPhases = (
 				23055ECF05E1807F00EAB16F /* CopyFiles */,
 				23055ED305E1807F00EAB16F /* CopyFiles */,
@@ -28,7 +28,7 @@
 		};
 		23055F1705E1807F00EAB16F /* Drivers (Aggregate) */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 725B05A00A0032CF000FE99A /* Build configuration list for PBXAggregateTarget "Drivers (Aggregate)" */;
+			buildConfigurationList = 72DD79B4091AA0ED00EE4DEA /* Build configuration list for PBXAggregateTarget "Drivers (Aggregate)" */;
 			buildPhases = (
 				23055F1C05E1807F00EAB16F /* CopyFiles */,
 			);
@@ -43,7 +43,7 @@
 		};
 		23055F5505E1808000EAB16F /* SampleCode (Aggregate) */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 725B05BC0A0032CF000FE99A /* Build configuration list for PBXAggregateTarget "SampleCode (Aggregate)" */;
+			buildConfigurationList = 72DD79D0091AA0ED00EE4DEA /* Build configuration list for PBXAggregateTarget "SampleCode (Aggregate)" */;
 			buildPhases = (
 			);
 			dependencies = (
@@ -53,7 +53,7 @@
 		};
 		23055F5605E1808000EAB16F /* Helpers (Aggregate) */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 725B05680A0032CF000FE99A /* Build configuration list for PBXAggregateTarget "Helpers (Aggregate)" */;
+			buildConfigurationList = 72DD797C091AA0ED00EE4DEA /* Build configuration list for PBXAggregateTarget "Helpers (Aggregate)" */;
 			buildPhases = (
 				23055F5C05E1808000EAB16F /* CopyFiles */,
 			);
@@ -68,7 +68,7 @@
 		};
 		2305609205E1808700EAB16F /* Authenticators (Aggregate) */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 725B05B80A0032CF000FE99A /* Build configuration list for PBXAggregateTarget "Authenticators (Aggregate)" */;
+			buildConfigurationList = 72DD79CC091AA0ED00EE4DEA /* Build configuration list for PBXAggregateTarget "Authenticators (Aggregate)" */;
 			buildPhases = (
 			);
 			dependencies = (
@@ -84,6 +84,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		0C0F0E3B0B72CF730046310D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAA1C2300D5514104CA2CDC /* SystemConfiguration.framework */; };
 		23022728062DA4C10033908D /* pppcontroller.h in Headers */ = {isa = PBXBuildFile; fileRef = 23022727062DA4C10033908D /* pppcontroller.h */; };
 		23055ED105E1807F00EAB16F /* MiniTerm.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 013F974C001901697F000001 /* MiniTerm.h */; };
 		23055ED205E1807F00EAB16F /* PPP_VERSION.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 23A7DF9005DAD1A100A3589A /* PPP_VERSION.h */; };
@@ -196,8 +197,6 @@
 		23055FDB05E1808300EAB16F /* ipcp.h in Headers */ = {isa = PBXBuildFile; fileRef = F51AB0F10235C6910160DF93 /* ipcp.h */; };
 		23055FDC05E1808300EAB16F /* lcp.h in Headers */ = {isa = PBXBuildFile; fileRef = F51AB0F70235C6910160DF93 /* lcp.h */; };
 		23055FDD05E1808300EAB16F /* magic.h in Headers */ = {isa = PBXBuildFile; fileRef = F51AB0F90235C6910160DF93 /* magic.h */; };
-		23055FDE05E1808300EAB16F /* md4.h in Headers */ = {isa = PBXBuildFile; fileRef = F51AB1190235C6E60160DF93 /* md4.h */; };
-		23055FDF05E1808300EAB16F /* md5.h in Headers */ = {isa = PBXBuildFile; fileRef = F51AB11B0235C6E60160DF93 /* md5.h */; };
 		23055FE005E1808300EAB16F /* patchlevel.h in Headers */ = {isa = PBXBuildFile; fileRef = F51AB1250235C7020160DF93 /* patchlevel.h */; };
 		23055FE105E1808300EAB16F /* pathnames.h in Headers */ = {isa = PBXBuildFile; fileRef = F51AB1260235C7020160DF93 /* pathnames.h */; };
 		23055FE205E1808300EAB16F /* pppd.h in Headers */ = {isa = PBXBuildFile; fileRef = F51AB1270235C7020160DF93 /* pppd.h */; };
@@ -224,8 +223,6 @@
 		23055FF805E1808300EAB16F /* lcp.c in Sources */ = {isa = PBXBuildFile; fileRef = F51AB0F60235C6910160DF93 /* lcp.c */; };
 		23055FF905E1808300EAB16F /* magic.c in Sources */ = {isa = PBXBuildFile; fileRef = F51AB0F80235C6910160DF93 /* magic.c */; };
 		23055FFA05E1808300EAB16F /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = F51AB0FA0235C6910160DF93 /* main.c */; };
-		23055FFB05E1808300EAB16F /* md4.c in Sources */ = {isa = PBXBuildFile; fileRef = F51AB1180235C6E60160DF93 /* md4.c */; };
-		23055FFC05E1808300EAB16F /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = F51AB11A0235C6E60160DF93 /* md5.c */; };
 		23055FFD05E1808300EAB16F /* options.c in Sources */ = {isa = PBXBuildFile; fileRef = F51AB1240235C7020160DF93 /* options.c */; };
 		23055FFE05E1808300EAB16F /* sys-MacOSX.c in Sources */ = {isa = PBXBuildFile; fileRef = F51AB1280235C7020160DF93 /* sys-MacOSX.c */; };
 		23055FFF05E1808300EAB16F /* tdb.c in Sources */ = {isa = PBXBuildFile; fileRef = F51AB1290235C7020160DF93 /* tdb.c */; };
@@ -395,6 +392,12 @@
 		23C5A61306F280A90082320C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 23C5A61006F280A90082320C /* Localizable.strings */; };
 		23D96C680621CB8600FDE1D8 /* pppcontroller_types.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 23B70767061B74AE008BA483 /* pppcontroller_types.h */; };
 		23D96C700621CB9900FDE1D8 /* pppcontroller.defs in CopyFiles */ = {isa = PBXBuildFile; fileRef = 23B70768061B74AE008BA483 /* pppcontroller.defs */; };
+		72117C6409EC519A008EC1A2 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23524800049FFD5F0051E486 /* Security.framework */; };
+		723FE96709E5C4AA00845480 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAA1C2300D5514104CA2CDC /* SystemConfiguration.framework */; };
+		7251DFEF09212AAA00B94FFF /* radius_eap.c in Sources */ = {isa = PBXBuildFile; fileRef = 7251DFEE09212AAA00B94FFF /* radius_eap.c */; };
+		7251E01309212CF000B94FFF /* radius.h in Headers */ = {isa = PBXBuildFile; fileRef = 7251E01209212CF000B94FFF /* radius.h */; };
+		72D07F270A65A7D0009D1FA4 /* vpn_control.h in Headers */ = {isa = PBXBuildFile; fileRef = 72D07F260A65A7D0009D1FA4 /* vpn_control.h */; };
+		72D07F280A65A7D0009D1FA4 /* vpn_control.h in Headers */ = {isa = PBXBuildFile; fileRef = 72D07F260A65A7D0009D1FA4 /* vpn_control.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -787,7 +790,7 @@
 		01A345D600C4684A7F000001 /* ppp_client.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ppp_client.c; path = Controller/ppp_client.c; sourceTree = "<group>"; };
 		01A345D900C468837F000001 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = Controller/English.lproj/Localizable.strings; sourceTree = "<group>"; };
 		071EC564009888F57F000001 /* Dialogs.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = Dialogs.c; path = Dialogs/Dialogs.c; sourceTree = SOURCE_ROOT; };
-		071EC567009889367F000001 /* English */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.strings; name = English; path = Dialogs/English.lproj/Localizable.strings; sourceTree = SOURCE_ROOT; };
+		071EC567009889367F000001 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = Dialogs/English.lproj/Localizable.strings; sourceTree = SOURCE_ROOT; };
 		0D977A4500C8596D7F000001 /* NetworkConnect.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = NetworkConnect.icns; sourceTree = "<group>"; };
 		23022727062DA4C10033908D /* pppcontroller.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = pppcontroller.h; path = "ppp.build/PPPController (Bundle).build/DerivedSources/pppcontroller.h"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23055EF205E1807F00EAB16F /* PPPController-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = "PPPController-Info.plist"; path = "Controller/PPPController-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -901,6 +904,9 @@
 		7129A45CFFF956F311CA2CDC /* ppp_getoption.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ppp_getoption.c; path = Controller/ppp_getoption.c; sourceTree = "<group>"; };
 		7129A45DFFF956F311CA2CDC /* ppp_manager.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ppp_manager.c; path = Controller/ppp_manager.c; sourceTree = "<group>"; };
 		7129A463FFF956F311CA2CDC /* ppp_main.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = ppp_main.c; path = Controller/ppp_main.c; sourceTree = "<group>"; };
+		7251DFEE09212AAA00B94FFF /* radius_eap.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = radius_eap.c; path = Authenticators/Radius/radius_eap.c; sourceTree = "<group>"; };
+		7251E01209212CF000B94FFF /* radius.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = radius.h; path = Authenticators/Radius/radius.h; sourceTree = "<group>"; };
+		72D07F260A65A7D0009D1FA4 /* vpn_control.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = vpn_control.h; path = "Drivers/L2TP/L2TP-plugin/vpn_control.h"; sourceTree = "<group>"; };
 		836F4BE305DB26090099DEC1 /* chap-md5.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = "chap-md5.c"; path = "pppd/chap-md5.c"; sourceTree = "<group>"; };
 		838396E905DAF862005F1950 /* chap-md5.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = "chap-md5.h"; path = "pppd/chap-md5.h"; sourceTree = "<group>"; };
 		838396EA05DAF862005F1950 /* chap-new.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = "chap-new.c"; path = "pppd/chap-new.c"; sourceTree = "<group>"; };
@@ -929,10 +935,6 @@
 		F51AB0F80235C6910160DF93 /* magic.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = magic.c; path = pppd/magic.c; sourceTree = "<group>"; };
 		F51AB0F90235C6910160DF93 /* magic.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = magic.h; path = pppd/magic.h; sourceTree = "<group>"; };
 		F51AB0FA0235C6910160DF93 /* main.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = main.c; path = pppd/main.c; sourceTree = "<group>"; };
-		F51AB1180235C6E60160DF93 /* md4.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = md4.c; path = pppd/md4.c; sourceTree = "<group>"; };
-		F51AB1190235C6E60160DF93 /* md4.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = md4.h; path = pppd/md4.h; sourceTree = "<group>"; };
-		F51AB11A0235C6E60160DF93 /* md5.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = md5.c; path = pppd/md5.c; sourceTree = "<group>"; };
-		F51AB11B0235C6E60160DF93 /* md5.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = md5.h; path = pppd/md5.h; sourceTree = "<group>"; };
 		F51AB1240235C7020160DF93 /* options.c */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.c; name = options.c; path = pppd/options.c; sourceTree = "<group>"; };
 		F51AB1250235C7020160DF93 /* patchlevel.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = patchlevel.h; path = pppd/patchlevel.h; sourceTree = "<group>"; };
 		F51AB1260235C7020160DF93 /* pathnames.h */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.h; name = pathnames.h; path = pppd/pathnames.h; sourceTree = "<group>"; };
@@ -1113,6 +1115,7 @@
 			files = (
 				23055FD005E1808200EAB16F /* CoreFoundation.framework in Frameworks */,
 				23055FD105E1808200EAB16F /* ApplicationServices.framework in Frameworks */,
+				0C0F0E3B0B72CF730046310D /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1175,6 +1178,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72117C6409EC519A008EC1A2 /* Security.framework in Frameworks */,
+				723FE96709E5C4AA00845480 /* SystemConfiguration.framework in Frameworks */,
 				230560A105E1808800EAB16F /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1326,8 +1331,10 @@
 		238AE02A044B14EC002F20A4 /* Radius */ = {
 			isa = PBXGroup;
 			children = (
+				7251E01209212CF000B94FFF /* radius.h */,
 				230560A405E1808900EAB16F /* Radius-Info.plist */,
 				238AE03E044B162D002F20A4 /* main.c */,
+				7251DFEE09212AAA00B94FFF /* radius_eap.c */,
 				238AE03F044B162D002F20A4 /* radlib_private.h */,
 				238AE040044B162D002F20A4 /* radlib_vs.h */,
 				238AE041044B162D002F20A4 /* radlib.c */,
@@ -1647,11 +1654,11 @@
 		F517DE960237251F01E059DF /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				F51AB13A0235C9C70160DF93 /* SystemConfiguration.framework */,
 				F517DE910237226101E059DF /* System.framework */,
 				F51AB14A0235CA450160DF93 /* CoreFoundation.framework */,
 				23524800049FFD5F0051E486 /* Security.framework */,
 				FA9E969403798CF504CA2CDC /* IOKit.framework */,
-				F51AB13A0235C9C70160DF93 /* SystemConfiguration.framework */,
 				F517DE940237250601E059DF /* libcrypto.dylib */,
 			);
 			name = Libraries;
@@ -1676,8 +1683,6 @@
 				FA2201BE0368A76404CA2CDC /* ipv6cp.h */,
 				F51AB0F70235C6910160DF93 /* lcp.h */,
 				F51AB0F90235C6910160DF93 /* magic.h */,
-				F51AB1190235C6E60160DF93 /* md4.h */,
-				F51AB11B0235C6E60160DF93 /* md5.h */,
 				F51AB1270235C7020160DF93 /* pppd.h */,
 				F51AB1250235C7020160DF93 /* patchlevel.h */,
 				F51AB1260235C7020160DF93 /* pathnames.h */,
@@ -1705,14 +1710,12 @@
 				FAA0F5480327F35404CA2CDC /* eap.c */,
 				F61B2AE00361E5360169B27A /* ecp.c */,
 				FA2201C10368A8A204CA2CDC /* eui64.c */,
-				F51AB11A0235C6E60160DF93 /* md5.c */,
 				F51AB0EE0235C6910160DF93 /* fsm.c */,
 				F51AB0F00235C6910160DF93 /* ipcp.c */,
 				FA2201BD0368A76404CA2CDC /* ipv6cp.c */,
 				F51AB0F60235C6910160DF93 /* lcp.c */,
 				F51AB0F80235C6910160DF93 /* magic.c */,
 				F51AB0FA0235C6910160DF93 /* main.c */,
-				F51AB1180235C6E60160DF93 /* md4.c */,
 				F51AB1240235C7020160DF93 /* options.c */,
 				838396EF05DAF89B005F1950 /* pppcrypt.c */,
 				F51AB1280235C7020160DF93 /* sys-MacOSX.c */,
@@ -1935,6 +1938,7 @@
 				F68A747403A1B12D01DF2EE2 /* CoreFoundation.framework */,
 				FA76575303EB2B7504CA2DDA /* ipsec_strerror.h */,
 				FA76575403EB2B7504CA2DDA /* libpfkey.h */,
+				72D07F260A65A7D0009D1FA4 /* vpn_control.h */,
 				FA76575503EB2B7504CA2DDA /* pfkey.c */,
 				FACD767C040D4BD004CA2DF0 /* psk.l2tp */,
 				FACD767D040D4BD004CA2DF0 /* racoon.l2tp */,
@@ -2079,8 +2083,6 @@
 				23055FDB05E1808300EAB16F /* ipcp.h in Headers */,
 				23055FDC05E1808300EAB16F /* lcp.h in Headers */,
 				23055FDD05E1808300EAB16F /* magic.h in Headers */,
-				23055FDE05E1808300EAB16F /* md4.h in Headers */,
-				23055FDF05E1808300EAB16F /* md5.h in Headers */,
 				23055FE005E1808300EAB16F /* patchlevel.h in Headers */,
 				23055FE105E1808300EAB16F /* pathnames.h in Headers */,
 				23055FE205E1808300EAB16F /* pppd.h in Headers */,
@@ -2135,6 +2137,7 @@
 				2305605505E1808500EAB16F /* libpfkey.h in Headers */,
 				2305605705E1808500EAB16F /* PPP_VERSION.h in Headers */,
 				2363A9FF06E00493007D0E7A /* cf_utils.h in Headers */,
+				72D07F270A65A7D0009D1FA4 /* vpn_control.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2159,6 +2162,7 @@
 				2305608205E1808600EAB16F /* libpfkey.h in Headers */,
 				2305608405E1808600EAB16F /* RASSchemaDefinitions.h in Headers */,
 				2305608505E1808600EAB16F /* PPP_VERSION.h in Headers */,
+				72D07F280A65A7D0009D1FA4 /* vpn_control.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2170,6 +2174,7 @@
 				2305609905E1808800EAB16F /* radlib_vs.h in Headers */,
 				2305609A05E1808800EAB16F /* radlib.h in Headers */,
 				2305609B05E1808800EAB16F /* PPP_VERSION.h in Headers */,
+				7251E01309212CF000B94FFF /* radius.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2215,7 +2220,7 @@
 /* Begin PBXNativeTarget section */
 		23055ED405E1807F00EAB16F /* PPPController (Bundle) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 725B05700A0032CF000FE99A /* Build configuration list for PBXNativeTarget "PPPController (Bundle)" */;
+			buildConfigurationList = 72DD7984091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "PPPController (Bundle)" */;
 			buildPhases = (
 				23055ED605E1807F00EAB16F /* Headers */,
 				23055EDE05E1807F00EAB16F /* Resources */,
@@ -2238,7 +2243,7 @@
 		};
 		23055EF405E1807F00EAB16F /* PPP (Kernel Extension) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 725B05740A0032CF000FE99A /* Build configuration list for PBXNativeTarget "PPP (Kernel Extension)" */;
+			buildConfigurationList = 72DD7988091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "PPP (Kernel Extension)" */;
 			buildPhases = (
 				23055EF505E1807F00EAB16F /* ShellScript */,
 				23055EF605E1807F00EAB16F /* Headers */,
@@ -2260,7 +2265,7 @@
 		};
 		23055F1F05E1807F00EAB16F /* PPPoE (Plugin) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 725B05840A0032CF000FE99A /* Build configuration list for PBXNativeTarget "PPPoE (Plugin)" */;
+			buildConfigurationList = 72DD7998091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "PPPoE (Plugin)" */;
 			buildPhases = (
 				23055F2205E1807F00EAB16F /* Headers */,
 				23055F2405E1807F00EAB16F /* Resources */,
@@ -2283,7 +2288,7 @@
 		};
 		23055F3205E1808000EAB16F /* PPPoE (Kernel Extension) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 725B05800A0032CF000FE99A /* Build configuration list for PBXNativeTarget "PPPoE (Kernel Extension)" */;
+			buildConfigurationList = 72DD7994091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "PPPoE (Kernel Extension)" */;
 			buildPhases = (
 				23055F3305E1808000EAB16F /* ShellScript */,
 				23055F3405E1808000EAB16F /* Headers */,
@@ -2304,7 +2309,7 @@
 		};
 		23055F4805E1808000EAB16F /* PPPoE (VPN Plugin) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 725B057C0A0032CF000FE99A /* Build configuration list for PBXNativeTarget "PPPoE (VPN Plugin)" */;
+			buildConfigurationList = 72DD7990091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "PPPoE (VPN Plugin)" */;
 			buildPhases = (
 				23055F4905E1808000EAB16F /* Headers */,
 				23055F4B05E1808000EAB16F /* Resources */,
@@ -2324,7 +2329,7 @@
 		};
 		23055F6D05E1808100EAB16F /* MiniTerm (Application) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 725B05600A0032CF000FE99A /* Build configuration list for PBXNativeTarget "MiniTerm (Application)" */;
+			buildConfigurationList = 72DD7974091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "MiniTerm (Application)" */;
 			buildPhases = (
 				23055F6E05E1808100EAB16F /* Headers */,
 				23055F7105E1808100EAB16F /* Resources */,
@@ -2344,7 +2349,7 @@
 		};
 		23055F7F05E1808100EAB16F /* PPPDialogs (Plugin) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 725B056C0A0032CF000FE99A /* Build configuration list for PBXNativeTarget "PPPDialogs (Plugin)" */;
+			buildConfigurationList = 72DD7980091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "PPPDialogs (Plugin)" */;
 			buildPhases = (
 				23055F8005E1808100EAB16F /* Headers */,
 				23055F8205E1808100EAB16F /* Resources */,
@@ -2364,7 +2369,7 @@
 		};
 		23055F8D05E1808100EAB16F /* PPTP (Plugin) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 725B05900A0032CF000FE99A /* Build configuration list for PBXNativeTarget "PPTP (Plugin)" */;
+			buildConfigurationList = 72DD79A4091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "PPTP (Plugin)" */;
 			buildPhases = (
 				23055F9005E1808100EAB16F /* Headers */,
 				23055F9305E1808100EAB16F /* Resources */,
@@ -2387,7 +2392,7 @@
 		};
 		23055FA305E1808200EAB16F /* PPTP (Kernel Extension) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 725B05880A0032CF000FE99A /* Build configuration list for PBXNativeTarget "PPTP (Kernel Extension)" */;
+			buildConfigurationList = 72DD799C091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "PPTP (Kernel Extension)" */;
 			buildPhases = (
 				23055FA405E1808200EAB16F /* ShellScript */,
 				23055FA505E1808200EAB16F /* Headers */,
@@ -2407,7 +2412,7 @@
 		};
 		23055FBA05E1808200EAB16F /* PPTP (VPN Plugin) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 725B058C0A0032CF000FE99A /* Build configuration list for PBXNativeTarget "PPTP (VPN Plugin)" */;
+			buildConfigurationList = 72DD79A0091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "PPTP (VPN Plugin)" */;
 			buildPhases = (
 				23055FBB05E1808200EAB16F /* Headers */,
 				23055FBD05E1808200EAB16F /* Resources */,
@@ -2427,7 +2432,7 @@
 		};
 		23055FC605E1808200EAB16F /* PPPSerial (Plugin) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 725B05780A0032CF000FE99A /* Build configuration list for PBXNativeTarget "PPPSerial (Plugin)" */;
+			buildConfigurationList = 72DD798C091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "PPPSerial (Plugin)" */;
 			buildPhases = (
 				23055FC705E1808200EAB16F /* Headers */,
 				23055FC905E1808200EAB16F /* Resources */,
@@ -2447,7 +2452,7 @@
 		};
 		23055FD605E1808300EAB16F /* pppd (Tool) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 725B05580A0032CF000FE99A /* Build configuration list for PBXNativeTarget "pppd (Tool)" */;
+			buildConfigurationList = 72DD796C091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "pppd (Tool)" */;
 			buildPhases = (
 				23055FD705E1808300EAB16F /* Headers */,
 				23055FF105E1808300EAB16F /* Sources */,
@@ -2468,7 +2473,7 @@
 		};
 		2305601A05E1808300EAB16F /* vpnd (Tool) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 725B055C0A0032CF000FE99A /* Build configuration list for PBXNativeTarget "vpnd (Tool)" */;
+			buildConfigurationList = 72DD7970091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "vpnd (Tool)" */;
 			buildPhases = (
 				2305601B05E1808300EAB16F /* Headers */,
 				2305602105E1808300EAB16F /* Sources */,
@@ -2489,7 +2494,7 @@
 		};
 		2305603105E1808400EAB16F /* pppstats (Tool) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 725B05C40A0032CF000FE99A /* Build configuration list for PBXNativeTarget "pppstats (Tool)" */;
+			buildConfigurationList = 72DD79D8091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "pppstats (Tool)" */;
 			buildPhases = (
 				2305603205E1808400EAB16F /* Headers */,
 				2305603405E1808400EAB16F /* Sources */,
@@ -2510,7 +2515,7 @@
 		};
 		2305603E05E1808400EAB16F /* InstallHeaders */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 725B05540A0032CF000FE99A /* Build configuration list for PBXNativeTarget "InstallHeaders" */;
+			buildConfigurationList = 72DD7968091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "InstallHeaders" */;
 			buildPhases = (
 				2305604405E1808400EAB16F /* CopyFiles */,
 			);
@@ -2526,7 +2531,7 @@
 		};
 		2305604F05E1808500EAB16F /* L2TP (Plugin) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 725B059C0A0032CF000FE99A /* Build configuration list for PBXNativeTarget "L2TP (Plugin)" */;
+			buildConfigurationList = 72DD79B0091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "L2TP (Plugin)" */;
 			buildPhases = (
 				2305605205E1808500EAB16F /* Headers */,
 				2305605805E1808500EAB16F /* Resources */,
@@ -2549,7 +2554,7 @@
 		};
 		2305606A05E1808600EAB16F /* L2TP (Kernel Extension) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 725B05940A0032CF000FE99A /* Build configuration list for PBXNativeTarget "L2TP (Kernel Extension)" */;
+			buildConfigurationList = 72DD79A8091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "L2TP (Kernel Extension)" */;
 			buildPhases = (
 				2305606B05E1808600EAB16F /* ShellScript */,
 				2305606C05E1808600EAB16F /* Headers */,
@@ -2570,7 +2575,7 @@
 		};
 		2305607F05E1808600EAB16F /* L2TP (VPN Plugin) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 725B05980A0032CF000FE99A /* Build configuration list for PBXNativeTarget "L2TP (VPN Plugin)" */;
+			buildConfigurationList = 72DD79AC091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "L2TP (VPN Plugin)" */;
 			buildPhases = (
 				2305608005E1808600EAB16F /* Headers */,
 				2305608605E1808600EAB16F /* Resources */,
@@ -2590,7 +2595,7 @@
 		};
 		2305609605E1808800EAB16F /* Radius (Plugin) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 725B05AC0A0032CF000FE99A /* Build configuration list for PBXNativeTarget "Radius (Plugin)" */;
+			buildConfigurationList = 72DD79C0091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "Radius (Plugin)" */;
 			buildPhases = (
 				2305609705E1808800EAB16F /* Headers */,
 				2305609C05E1808800EAB16F /* Resources */,
@@ -2610,7 +2615,7 @@
 		};
 		230560A605E1808900EAB16F /* DSAuth (Plugin) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 725B05A80A0032CF000FE99A /* Build configuration list for PBXNativeTarget "DSAuth (Plugin)" */;
+			buildConfigurationList = 72DD79BC091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "DSAuth (Plugin)" */;
 			buildPhases = (
 				230560A705E1808900EAB16F /* Headers */,
 				230560AA05E1808900EAB16F /* Resources */,
@@ -2630,7 +2635,7 @@
 		};
 		230560B705E1808A00EAB16F /* DSACL (Plugin) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 725B05A40A0032CF000FE99A /* Build configuration list for PBXNativeTarget "DSACL (Plugin)" */;
+			buildConfigurationList = 72DD79B8091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "DSACL (Plugin)" */;
 			buildPhases = (
 				230560B805E1808A00EAB16F /* Headers */,
 				230560BC05E1808A00EAB16F /* Resources */,
@@ -2650,7 +2655,7 @@
 		};
 		230560C805E1808B00EAB16F /* chat (Tool) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 725B05640A0032CF000FE99A /* Build configuration list for PBXNativeTarget "chat (Tool)" */;
+			buildConfigurationList = 72DD7978091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "chat (Tool)" */;
 			buildPhases = (
 				230560C905E1808B00EAB16F /* Headers */,
 				230560CB05E1808B00EAB16F /* Sources */,
@@ -2671,7 +2676,7 @@
 		};
 		2342E4A006DA523D0019B94A /* EAP-KRB (Plugin) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 725B05B40A0032CF000FE99A /* Build configuration list for PBXNativeTarget "EAP-KRB (Plugin)" */;
+			buildConfigurationList = 72DD79C8091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "EAP-KRB (Plugin)" */;
 			buildPhases = (
 				2342E49D06DA523D0019B94A /* Resources */,
 				2342E49E06DA523D0019B94A /* Sources */,
@@ -2688,7 +2693,7 @@
 		};
 		23C6083206DA64F8001ECACE /* to_delete */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 725B05C80A0032CF000FE99A /* Build configuration list for PBXNativeTarget "to_delete" */;
+			buildConfigurationList = 72DD79DC091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "to_delete" */;
 			buildPhases = (
 				23C6083006DA64F8001ECACE /* Sources */,
 				23C6083106DA64F8001ECACE /* Frameworks */,
@@ -2704,7 +2709,7 @@
 		};
 		23E16FA7062D9F3E0006D20B /* EAP-TLS (Plugin) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 725B05B00A0032CF000FE99A /* Build configuration list for PBXNativeTarget "EAP-TLS (Plugin)" */;
+			buildConfigurationList = 72DD79C4091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "EAP-TLS (Plugin)" */;
 			buildPhases = (
 				23E16FA8062D9F3E0006D20B /* Headers */,
 				23E16FA9062D9F3E0006D20B /* Resources */,
@@ -2727,11 +2732,13 @@
 /* Begin PBXProject section */
 		7129A431FFF956F311CA2CDC /* Project object */ = {
 			isa = PBXProject;
-			buildConfigurationList = 725B05CC0A0032CF000FE99A /* Build configuration list for PBXProject "ppp" */;
+			buildConfigurationList = 72DD79E0091AA0ED00EE4DEA /* Build configuration list for PBXProject "ppp" */;
+			compatibilityVersion = "Xcode 2.4";
 			hasScannedForEncodings = 1;
 			mainGroup = 7129A432FFF956F311CA2CDC /* ppp */;
 			productRefGroup = 7129A4CEFFF956F311CA2CDC /* Products */;
 			projectDirPath = "";
+			projectRoot = "";
 			targets = (
 				23055EC705E1807F00EAB16F /* ppp (Aggregate) */,
 				23055ED405E1807F00EAB16F /* PPPController (Bundle) */,
@@ -3316,8 +3323,6 @@
 				23055FF805E1808300EAB16F /* lcp.c in Sources */,
 				23055FF905E1808300EAB16F /* magic.c in Sources */,
 				23055FFA05E1808300EAB16F /* main.c in Sources */,
-				23055FFB05E1808300EAB16F /* md4.c in Sources */,
-				23055FFC05E1808300EAB16F /* md5.c in Sources */,
 				23055FFD05E1808300EAB16F /* options.c in Sources */,
 				23055FFE05E1808300EAB16F /* sys-MacOSX.c in Sources */,
 				23055FFF05E1808300EAB16F /* tdb.c in Sources */,
@@ -3398,6 +3403,7 @@
 			files = (
 				2305609E05E1808800EAB16F /* main.c in Sources */,
 				2305609F05E1808800EAB16F /* radlib.c in Sources */,
+				7251DFEF09212AAA00B94FFF /* radius_eap.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3720,7 +3726,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		725B05550A0032CF000FE99A /* Development */ = {
+		72DD7969091AA0ED00EE4DEA /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -3748,7 +3754,7 @@
 			};
 			name = Development;
 		};
-		725B05560A0032CF000FE99A /* Deployment */ = {
+		72DD796A091AA0ED00EE4DEA /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
@@ -3771,7 +3777,7 @@
 			};
 			name = Deployment;
 		};
-		725B05570A0032CF000FE99A /* Default */ = {
+		72DD796B091AA0ED00EE4DEA /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INSTALLHDRS_COPY_PHASE = YES;
@@ -3789,9 +3795,14 @@
 			};
 			name = Default;
 		};
-		725B05590A0032CF000FE99A /* Development */ = {
+		72DD796D091AA0ED00EE4DEA /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					i386,
+					ppc,
+				);
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -3821,12 +3832,12 @@
 					"$(DSTROOT)/usr/include",
 				);
 				INSTALL_GROUP = wheel;
-				INSTALL_MODE_FLAG = 4511;
+				INSTALL_MODE_FLAG = 4555;
 				INSTALL_OWNER = root;
 				INSTALL_PATH = /usr/sbin;
 				MACOSX_DEPLOYMENT_TARGET = 10.4;
 				OPTIMIZATION_CFLAGS = "-O0";
-				OTHER_CFLAGS = "";
+				OTHER_CFLAGS = "-DCOMMON_DIGEST_FOR_OPENSSL";
 				OTHER_LDFLAGS = "-lbsm";
 				OTHER_REZFLAGS = "";
 				PPP_DEVELOPMENT = 1;
@@ -3843,7 +3854,7 @@
 			};
 			name = Development;
 		};
-		725B055A0A0032CF000FE99A /* Deployment */ = {
+		72DD796E091AA0ED00EE4DEA /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
@@ -3873,11 +3884,11 @@
 					"$(DSTROOT)/usr/include",
 				);
 				INSTALL_GROUP = wheel;
-				INSTALL_MODE_FLAG = 4511;
+				INSTALL_MODE_FLAG = 4555;
 				INSTALL_OWNER = root;
 				INSTALL_PATH = /usr/sbin;
 				MACOSX_DEPLOYMENT_TARGET = 10.4;
-				OTHER_CFLAGS = "";
+				OTHER_CFLAGS = "-DCOMMON_DIGEST_FOR_OPENSSL";
 				OTHER_LDFLAGS = "-lbsm";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = pppd;
@@ -3893,7 +3904,7 @@
 			};
 			name = Deployment;
 		};
-		725B055B0A0032CF000FE99A /* Default */ = {
+		72DD796F091AA0ED00EE4DEA /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_DYNAMIC_NO_PIC = YES;
@@ -3920,10 +3931,10 @@
 					"$(DSTROOT)/usr/include",
 				);
 				INSTALL_GROUP = wheel;
-				INSTALL_MODE_FLAG = 4511;
+				INSTALL_MODE_FLAG = 4555;
 				INSTALL_OWNER = root;
 				INSTALL_PATH = /usr/sbin;
-				OTHER_CFLAGS = "";
+				OTHER_CFLAGS = "-DCOMMON_DIGEST_FOR_OPENSSL";
 				OTHER_LDFLAGS = "-lbsm";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = pppd;
@@ -3938,9 +3949,13 @@
 			};
 			name = Default;
 		};
-		725B055D0A0032CF000FE99A /* Development */ = {
+		72DD7971091AA0ED00EE4DEA /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					i386,
+					ppc,
+				);
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -3950,7 +3965,7 @@
 				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = NO;
 				HEADER_SEARCH_PATHS = "$(SYSTEM_LIBRARY_DIR)/Frameworks/System.framework/PrivateHeaders";
 				INSTALL_GROUP = wheel;
-				INSTALL_MODE_FLAG = 4511;
+				INSTALL_MODE_FLAG = 4555;
 				INSTALL_OWNER = root;
 				INSTALL_PATH = /usr/sbin;
 				MACOSX_DEPLOYMENT_TARGET = 10.4;
@@ -3972,7 +3987,7 @@
 			};
 			name = Development;
 		};
-		725B055E0A0032CF000FE99A /* Deployment */ = {
+		72DD7972091AA0ED00EE4DEA /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
@@ -3982,7 +3997,7 @@
 				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = NO;
 				HEADER_SEARCH_PATHS = "$(SYSTEM_LIBRARY_DIR)/Frameworks/System.framework/PrivateHeaders";
 				INSTALL_GROUP = wheel;
-				INSTALL_MODE_FLAG = 4511;
+				INSTALL_MODE_FLAG = 4555;
 				INSTALL_OWNER = root;
 				INSTALL_PATH = /usr/sbin;
 				MACOSX_DEPLOYMENT_TARGET = 10.4;
@@ -4002,14 +4017,15 @@
 			};
 			name = Deployment;
 		};
-		725B055F0A0032CF000FE99A /* Default */ = {
+		72DD7973091AA0ED00EE4DEA /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = i386;
 				GCC_DYNAMIC_NO_PIC = YES;
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				HEADER_SEARCH_PATHS = "$(SYSTEM_LIBRARY_DIR)/Frameworks/System.framework/PrivateHeaders";
 				INSTALL_GROUP = wheel;
-				INSTALL_MODE_FLAG = 4511;
+				INSTALL_MODE_FLAG = 4555;
 				INSTALL_OWNER = root;
 				INSTALL_PATH = /usr/sbin;
 				OTHER_CFLAGS = "";
@@ -4027,7 +4043,7 @@
 			};
 			name = Default;
 		};
-		725B05610A0032CF000FE99A /* Development */ = {
+		72DD7975091AA0ED00EE4DEA /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -4058,7 +4074,7 @@
 			};
 			name = Development;
 		};
-		725B05620A0032CF000FE99A /* Deployment */ = {
+		72DD7976091AA0ED00EE4DEA /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
@@ -4085,7 +4101,7 @@
 			};
 			name = Deployment;
 		};
-		725B05630A0032CF000FE99A /* Default */ = {
+		72DD7977091AA0ED00EE4DEA /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_DYNAMIC_NO_PIC = YES;
@@ -4107,7 +4123,7 @@
 			};
 			name = Default;
 		};
-		725B05650A0032CF000FE99A /* Development */ = {
+		72DD7979091AA0ED00EE4DEA /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -4135,7 +4151,7 @@
 			};
 			name = Development;
 		};
-		725B05660A0032CF000FE99A /* Deployment */ = {
+		72DD797A091AA0ED00EE4DEA /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
@@ -4159,7 +4175,7 @@
 			};
 			name = Deployment;
 		};
-		725B05670A0032CF000FE99A /* Default */ = {
+		72DD797B091AA0ED00EE4DEA /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_DYNAMIC_NO_PIC = YES;
@@ -4178,7 +4194,7 @@
 			};
 			name = Default;
 		};
-		725B05690A0032CF000FE99A /* Development */ = {
+		72DD797D091AA0ED00EE4DEA /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -4207,7 +4223,7 @@
 			};
 			name = Development;
 		};
-		725B056A0A0032CF000FE99A /* Deployment */ = {
+		72DD797E091AA0ED00EE4DEA /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
@@ -4231,7 +4247,7 @@
 			};
 			name = Deployment;
 		};
-		725B056B0A0032CF000FE99A /* Default */ = {
+		72DD797F091AA0ED00EE4DEA /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "";
@@ -4250,9 +4266,11 @@
 			};
 			name = Default;
 		};
-		725B056D0A0032CF000FE99A /* Development */ = {
+		72DD7981091AA0ED00EE4DEA /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)";
+				CONFIGURATION_TEMP_DIR = "$(PROJECT_TEMP_DIR)/$(CONFIGURATION)";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -4261,6 +4279,7 @@
 				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = NO;
 				INFOPLIST_FILE = "Dialogs/PPPDialogs-Info.plist";
 				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				OBJROOT = "$(SYMROOT)";
 				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = (
@@ -4282,7 +4301,7 @@
 			};
 			name = Development;
 		};
-		725B056E0A0032CF000FE99A /* Deployment */ = {
+		72DD7982091AA0ED00EE4DEA /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
@@ -4309,7 +4328,7 @@
 			};
 			name = Deployment;
 		};
-		725B056F0A0032CF000FE99A /* Default */ = {
+		72DD7983091AA0ED00EE4DEA /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "Dialogs/PPPDialogs-Info.plist";
@@ -4322,6 +4341,7 @@
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = PPPDialogs;
 				SECTORDER_FLAGS = "";
+				SYMROOT = build;
 				WARNING_CFLAGS = (
 					"-Wmost",
 					"-Wno-four-char-constants",
@@ -4331,9 +4351,10 @@
 			};
 			name = Default;
 		};
-		725B05710A0032CF000FE99A /* Development */ = {
+		72DD7985091AA0ED00EE4DEA /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(NEXT_ROOT)/System/Library/Frameworks/CoreServices.framework/Frameworks";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -4370,7 +4391,7 @@
 			};
 			name = Development;
 		};
-		725B05720A0032CF000FE99A /* Deployment */ = {
+		72DD7986091AA0ED00EE4DEA /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
@@ -4404,7 +4425,7 @@
 			};
 			name = Deployment;
 		};
-		725B05730A0032CF000FE99A /* Default */ = {
+		72DD7987091AA0ED00EE4DEA /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "$(NEXT_ROOT)/System/Library/Frameworks/CoreServices.framework/Frameworks";
@@ -4433,9 +4454,13 @@
 			};
 			name = Default;
 		};
-		725B05750A0032CF000FE99A /* Development */ = {
+		72DD7989091AA0ED00EE4DEA /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					i386,
+					ppc,
+				);
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -4453,7 +4478,7 @@
 				MODULE_NAME = com.apple.nke.ppp;
 				MODULE_START = ppp_module_start;
 				MODULE_STOP = ppp_module_stop;
-				MODULE_VERSION = 1.4.2;
+				MODULE_VERSION = 1.5;
 				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "-Wno-format";
 				OTHER_REZFLAGS = "";
@@ -4470,7 +4495,7 @@
 			};
 			name = Development;
 		};
-		725B05760A0032CF000FE99A /* Deployment */ = {
+		72DD798A091AA0ED00EE4DEA /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
@@ -4487,7 +4512,7 @@
 				MODULE_NAME = com.apple.nke.ppp;
 				MODULE_START = ppp_module_start;
 				MODULE_STOP = ppp_module_stop;
-				MODULE_VERSION = 1.4.2;
+				MODULE_VERSION = 1.5;
 				OTHER_CFLAGS = "-Wno-format";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = PPP;
@@ -4502,7 +4527,7 @@
 			};
 			name = Deployment;
 		};
-		725B05770A0032CF000FE99A /* Default */ = {
+		72DD798B091AA0ED00EE4DEA /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "";
@@ -4515,7 +4540,7 @@
 				MODULE_NAME = com.apple.nke.ppp;
 				MODULE_START = ppp_module_start;
 				MODULE_STOP = ppp_module_stop;
-				MODULE_VERSION = 1.4.2;
+				MODULE_VERSION = 1.5;
 				OTHER_CFLAGS = "-Wno-format";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = PPP;
@@ -4529,7 +4554,7 @@
 			};
 			name = Default;
 		};
-		725B05790A0032CF000FE99A /* Development */ = {
+		72DD798D091AA0ED00EE4DEA /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -4542,6 +4567,7 @@
 				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
 				MACOSX_DEPLOYMENT_TARGET = 10.4;
 				OPTIMIZATION_CFLAGS = "-O0";
+				OTHER_CFLAGS = "-DHAVE_LAUNCHSERVICES";
 				OTHER_LDFLAGS = (
 					"-bundle",
 					"-bundle_loader",
@@ -4561,7 +4587,7 @@
 			};
 			name = Development;
 		};
-		725B057A0A0032CF000FE99A /* Deployment */ = {
+		72DD798E091AA0ED00EE4DEA /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
@@ -4570,6 +4596,7 @@
 				INFOPLIST_FILE = "Drivers/PPPSerial/PPPSerial-plugin/PPPSerial-ppp-Info.plist";
 				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
 				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				OTHER_CFLAGS = "-DHAVE_LAUNCHSERVICES";
 				OTHER_LDFLAGS = (
 					"-bundle",
 					"-bundle_loader",
@@ -4588,11 +4615,12 @@
 			};
 			name = Deployment;
 		};
-		725B057B0A0032CF000FE99A /* Default */ = {
+		72DD798F091AA0ED00EE4DEA /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "Drivers/PPPSerial/PPPSerial-plugin/PPPSerial-ppp-Info.plist";
 				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
+				OTHER_CFLAGS = "-DHAVE_LAUNCHSERVICES";
 				OTHER_LDFLAGS = (
 					"-bundle",
 					"-bundle_loader",
@@ -4610,7 +4638,7 @@
 			};
 			name = Default;
 		};
-		725B057D0A0032CF000FE99A /* Development */ = {
+		72DD7991091AA0ED00EE4DEA /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -4642,7 +4670,7 @@
 			};
 			name = Development;
 		};
-		725B057E0A0032CF000FE99A /* Deployment */ = {
+		72DD7992091AA0ED00EE4DEA /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
@@ -4669,7 +4697,7 @@
 			};
 			name = Deployment;
 		};
-		725B057F0A0032CF000FE99A /* Default */ = {
+		72DD7993091AA0ED00EE4DEA /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "Drivers/PPPoE/PPPoE-vpn/PPPoE-vpn-Info.plist";
@@ -4691,7 +4719,7 @@
 			};
 			name = Default;
 		};
-		725B05810A0032CF000FE99A /* Development */ = {
+		72DD7995091AA0ED00EE4DEA /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -4710,7 +4738,7 @@
 				MODULE_NAME = com.apple.nke.pppoe;
 				MODULE_START = pppoe_domain_module_start;
 				MODULE_STOP = pppoe_domain_module_stop;
-				MODULE_VERSION = 1.4.2;
+				MODULE_VERSION = 1.5;
 				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "-Wno-format";
 				OTHER_REZFLAGS = "";
@@ -4727,7 +4755,7 @@
 			};
 			name = Development;
 		};
-		725B05820A0032CF000FE99A /* Deployment */ = {
+		72DD7996091AA0ED00EE4DEA /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
@@ -4743,7 +4771,7 @@
 				MODULE_NAME = com.apple.nke.pppoe;
 				MODULE_START = pppoe_domain_module_start;
 				MODULE_STOP = pppoe_domain_module_stop;
-				MODULE_VERSION = 1.4.2;
+				MODULE_VERSION = 1.5;
 				OTHER_CFLAGS = "-Wno-format";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = PPPoE;
@@ -4758,7 +4786,7 @@
 			};
 			name = Deployment;
 		};
-		725B05830A0032CF000FE99A /* Default */ = {
+		72DD7997091AA0ED00EE4DEA /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "";
@@ -4770,7 +4798,7 @@
 				MODULE_NAME = com.apple.nke.pppoe;
 				MODULE_START = pppoe_domain_module_start;
 				MODULE_STOP = pppoe_domain_module_stop;
-				MODULE_VERSION = 1.4.2;
+				MODULE_VERSION = 1.5;
 				OTHER_CFLAGS = "-Wno-format";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = PPPoE;
@@ -4784,7 +4812,7 @@
 			};
 			name = Default;
 		};
-		725B05850A0032CF000FE99A /* Development */ = {
+		72DD7999091AA0ED00EE4DEA /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -4817,7 +4845,7 @@
 			};
 			name = Development;
 		};
-		725B05860A0032CF000FE99A /* Deployment */ = {
+		72DD799A091AA0ED00EE4DEA /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
@@ -4845,7 +4873,7 @@
 			};
 			name = Deployment;
 		};
-		725B05870A0032CF000FE99A /* Default */ = {
+		72DD799B091AA0ED00EE4DEA /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "Drivers/PPPoE/PPPoE-plugin/PPPoE-ppp-Info.plist";
@@ -4868,7 +4896,7 @@
 			};
 			name = Default;
 		};
-		725B05890A0032CF000FE99A /* Development */ = {
+		72DD799D091AA0ED00EE4DEA /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -4886,7 +4914,7 @@
 				MODULE_NAME = com.apple.nke.pptp;
 				MODULE_START = pptp_domain_module_start;
 				MODULE_STOP = pptp_domain_module_stop;
-				MODULE_VERSION = 1.4.2;
+				MODULE_VERSION = 1.5;
 				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "";
 				OTHER_REZFLAGS = "";
@@ -4903,7 +4931,7 @@
 			};
 			name = Development;
 		};
-		725B058A0A0032CF000FE99A /* Deployment */ = {
+		72DD799E091AA0ED00EE4DEA /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
@@ -4918,7 +4946,7 @@
 				MODULE_NAME = com.apple.nke.pptp;
 				MODULE_START = pptp_domain_module_start;
 				MODULE_STOP = pptp_domain_module_stop;
-				MODULE_VERSION = 1.4.2;
+				MODULE_VERSION = 1.5;
 				OTHER_CFLAGS = "";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = PPTP;
@@ -4933,7 +4961,7 @@
 			};
 			name = Deployment;
 		};
-		725B058B0A0032CF000FE99A /* Default */ = {
+		72DD799F091AA0ED00EE4DEA /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "";
@@ -4944,7 +4972,7 @@
 				MODULE_NAME = com.apple.nke.pptp;
 				MODULE_START = pptp_domain_module_start;
 				MODULE_STOP = pptp_domain_module_stop;
-				MODULE_VERSION = 1.4.2;
+				MODULE_VERSION = 1.5;
 				OTHER_CFLAGS = "";
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = PPTP;
@@ -4958,7 +4986,7 @@
 			};
 			name = Default;
 		};
-		725B058D0A0032CF000FE99A /* Development */ = {
+		72DD79A1091AA0ED00EE4DEA /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -4991,7 +5019,7 @@
 			};
 			name = Development;
 		};
-		725B058E0A0032CF000FE99A /* Deployment */ = {
+		72DD79A2091AA0ED00EE4DEA /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
@@ -5019,7 +5047,7 @@
 			};
 			name = Deployment;
 		};
-		725B058F0A0032CF000FE99A /* Default */ = {
+		72DD79A3091AA0ED00EE4DEA /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = "$(SYSTEM_LIBRARY_DIR)/Frameworks/System.framework/PrivateHeaders/";
@@ -5042,7 +5070,7 @@
 			};
 			name = Default;
 		};
-		725B05910A0032CF000FE99A /* Development */ = {
+		72DD79A5091AA0ED00EE4DEA /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -5076,7 +5104,7 @@
 			};
 			name = Development;
 		};
-		725B05920A0032CF000FE99A /* Deployment */ = {
+		72DD79A6091AA0ED00EE4DEA /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
@@ -5105,7 +5133,7 @@
 			};
 			name = Deployment;
 		};
-		725B05930A0032CF000FE99A /* Default */ = {
+		72DD79A7091AA0ED00EE4DEA /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = "$(SYSTEM_LIBRARY_DIR)/Frameworks/System.framework/Versions/B/PrivateHeaders/";
@@ -5129,9 +5157,14 @@
 			};
 			name = Default;
 		};
-		725B05950A0032CF000FE99A /* Development */ = {
+		72DD79A9091AA0ED00EE4DEA /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					i386,
+					ppc,
+				);
+				BUNDLE_LOADER = "";
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -5147,7 +5180,7 @@
 				MODULE_NAME = com.apple.nke.lttp;
 				MODULE_START = l2tp_domain_module_start;
 				MODULE_STOP = l2tp_domain_module_stop;
-				MODULE_VERSION = 1.4.2;
+				MODULE_VERSION = 1.5;
 				OPTIMIZATION_CFLAGS = "-O0";
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
@@ -5165,7 +5198,7 @@
 			};
 			name = Development;
 		};
-		725B05960A0032CF000FE99A /* Deployment */ = {
+		72DD79AA091AA0ED00EE4DEA /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
@@ -5180,7 +5213,7 @@
 				MODULE_NAME = com.apple.nke.lttp;
 				MODULE_START = l2tp_domain_module_start;
 				MODULE_STOP = l2tp_domain_module_stop;
-				MODULE_VERSION = 1.4.2;
+				MODULE_VERSION = 1.5;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
@@ -5196,7 +5229,7 @@
 			};
 			name = Deployment;
 		};
-		725B05970A0032CF000FE99A /* Default */ = {
+		72DD79AB091AA0ED00EE4DEA /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "";
@@ -5207,7 +5240,7 @@
 				MODULE_NAME = com.apple.nke.lttp;
 				MODULE_START = l2tp_domain_module_start;
 				MODULE_STOP = l2tp_domain_module_stop;
-				MODULE_VERSION = 1.4.2;
+				MODULE_VERSION = 1.5;
 				OTHER_CFLAGS = "";
 				OTHER_LDFLAGS = "";
 				OTHER_REZFLAGS = "";
@@ -5222,9 +5255,13 @@
 			};
 			name = Default;
 		};
-		725B05990A0032CF000FE99A /* Development */ = {
+		72DD79AD091AA0ED00EE4DEA /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					i386,
+					ppc,
+				);
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -5256,7 +5293,7 @@
 			};
 			name = Development;
 		};
-		725B059A0A0032CF000FE99A /* Deployment */ = {
+		72DD79AE091AA0ED00EE4DEA /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
@@ -5285,7 +5322,7 @@
 			};
 			name = Deployment;
 		};
-		725B059B0A0032CF000FE99A /* Default */ = {
+		72DD79AF091AA0ED00EE4DEA /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = "$(SYSTEM_LIBRARY_DIR)/Frameworks/System.framework/PrivateHeaders/";
@@ -5309,9 +5346,13 @@
 			};
 			name = Default;
 		};
-		725B059D0A0032CF000FE99A /* Development */ = {
+		72DD79B1091AA0ED00EE4DEA /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = (
+					i386,
+					ppc,
+				);
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -5344,7 +5385,7 @@
 			};
 			name = Development;
 		};
-		725B059E0A0032CF000FE99A /* Deployment */ = {
+		72DD79B2091AA0ED00EE4DEA /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
@@ -5374,7 +5415,7 @@
 			};
 			name = Deployment;
 		};
-		725B059F0A0032CF000FE99A /* Default */ = {
+		72DD79B3091AA0ED00EE4DEA /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = "$(SYSTEM_LIBRARY_DIR)/Frameworks/System.framework/Versions/B/PrivateHeaders/";
@@ -5399,7 +5440,7 @@
 			};
 			name = Default;
 		};
-		725B05A10A0032CF000FE99A /* Development */ = {
+		72DD79B5091AA0ED00EE4DEA /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -5428,7 +5469,7 @@
 			};
 			name = Development;
 		};
-		725B05A20A0032CF000FE99A /* Deployment */ = {
+		72DD79B6091AA0ED00EE4DEA /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
@@ -5452,7 +5493,7 @@
 			};
 			name = Deployment;
 		};
-		725B05A30A0032CF000FE99A /* Default */ = {
+		72DD79B7091AA0ED00EE4DEA /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "";
@@ -5471,7 +5512,7 @@
 			};
 			name = Default;
 		};
-		725B05A50A0032CF000FE99A /* Development */ = {
+		72DD79B9091AA0ED00EE4DEA /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -5504,7 +5545,7 @@
 			};
 			name = Development;
 		};
-		725B05A60A0032CF000FE99A /* Deployment */ = {
+		72DD79BA091AA0ED00EE4DEA /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
@@ -5532,7 +5573,7 @@
 			};
 			name = Deployment;
 		};
-		725B05A70A0032CF000FE99A /* Default */ = {
+		72DD79BB091AA0ED00EE4DEA /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "Authenticators/DSAccessControl/DSACL-Info.plist";
@@ -5555,7 +5596,7 @@
 			};
 			name = Default;
 		};
-		725B05A90A0032CF000FE99A /* Development */ = {
+		72DD79BD091AA0ED00EE4DEA /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -5588,7 +5629,7 @@
 			};
 			name = Development;
 		};
-		725B05AA0A0032CF000FE99A /* Deployment */ = {
+		72DD79BE091AA0ED00EE4DEA /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
@@ -5616,7 +5657,7 @@
 			};
 			name = Deployment;
 		};
-		725B05AB0A0032CF000FE99A /* Default */ = {
+		72DD79BF091AA0ED00EE4DEA /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "Authenticators/DSAuthentication/DSAuth-Info.plist";
@@ -5639,7 +5680,7 @@
 			};
 			name = Default;
 		};
-		725B05AD0A0032CF000FE99A /* Development */ = {
+		72DD79C1091AA0ED00EE4DEA /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -5652,11 +5693,12 @@
 				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
 				MACOSX_DEPLOYMENT_TARGET = 10.4;
 				OPTIMIZATION_CFLAGS = "-O0";
-				OTHER_CFLAGS = "";
+				OTHER_CFLAGS = "-DCOMMON_DIGEST_FOR_OPENSSL";
 				OTHER_LDFLAGS = (
 					"-bundle",
 					"-bundle_loader",
 					"$(SYMROOT)/$(CONFIGURATION)/pppd",
+					"-lcrypto",
 				);
 				OTHER_REZFLAGS = "";
 				PPP_DEVELOPMENT = 1;
@@ -5672,7 +5714,7 @@
 			};
 			name = Development;
 		};
-		725B05AE0A0032CF000FE99A /* Deployment */ = {
+		72DD79C2091AA0ED00EE4DEA /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
@@ -5681,11 +5723,12 @@
 				INFOPLIST_FILE = "Authenticators/Radius/Radius-Info.plist";
 				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
 				MACOSX_DEPLOYMENT_TARGET = 10.4;
-				OTHER_CFLAGS = "";
+				OTHER_CFLAGS = "-DCOMMON_DIGEST_FOR_OPENSSL";
 				OTHER_LDFLAGS = (
 					"-bundle",
 					"-bundle_loader",
 					"$(SYMROOT)/$(CONFIGURATION)/pppd",
+					"-lcrypto",
 				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = Radius;
@@ -5700,16 +5743,17 @@
 			};
 			name = Deployment;
 		};
-		725B05AF0A0032CF000FE99A /* Default */ = {
+		72DD79C3091AA0ED00EE4DEA /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				INFOPLIST_FILE = "Authenticators/Radius/Radius-Info.plist";
 				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions";
-				OTHER_CFLAGS = "";
+				OTHER_CFLAGS = "-DCOMMON_DIGEST_FOR_OPENSSL";
 				OTHER_LDFLAGS = (
 					"-bundle",
 					"-bundle_loader",
 					"$(SYMROOT)/pppd",
+					"-lcrypto",
 				);
 				OTHER_REZFLAGS = "";
 				PRODUCT_NAME = Radius;
@@ -5723,7 +5767,7 @@
 			};
 			name = Default;
 		};
-		725B05B10A0032CF000FE99A /* Development */ = {
+		72DD79C5091AA0ED00EE4DEA /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -5758,7 +5802,7 @@
 			};
 			name = Development;
 		};
-		725B05B20A0032CF000FE99A /* Deployment */ = {
+		72DD79C6091AA0ED00EE4DEA /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
@@ -5788,7 +5832,7 @@
 			};
 			name = Deployment;
 		};
-		725B05B30A0032CF000FE99A /* Default */ = {
+		72DD79C7091AA0ED00EE4DEA /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"";
@@ -5813,7 +5857,7 @@
 			};
 			name = Default;
 		};
-		725B05B50A0032CF000FE99A /* Development */ = {
+		72DD79C9091AA0ED00EE4DEA /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -5850,7 +5894,7 @@
 			};
 			name = Development;
 		};
-		725B05B60A0032CF000FE99A /* Deployment */ = {
+		72DD79CA091AA0ED00EE4DEA /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
@@ -5882,7 +5926,7 @@
 			};
 			name = Deployment;
 		};
-		725B05B70A0032CF000FE99A /* Default */ = {
+		72DD79CB091AA0ED00EE4DEA /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"";
@@ -5909,7 +5953,7 @@
 			};
 			name = Default;
 		};
-		725B05B90A0032CF000FE99A /* Development */ = {
+		72DD79CD091AA0ED00EE4DEA /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -5935,7 +5979,7 @@
 			};
 			name = Development;
 		};
-		725B05BA0A0032CF000FE99A /* Deployment */ = {
+		72DD79CE091AA0ED00EE4DEA /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
@@ -5956,7 +6000,7 @@
 			};
 			name = Deployment;
 		};
-		725B05BB0A0032CF000FE99A /* Default */ = {
+		72DD79CF091AA0ED00EE4DEA /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				OTHER_CFLAGS = "";
@@ -5972,7 +6016,7 @@
 			};
 			name = Default;
 		};
-		725B05BD0A0032CF000FE99A /* Development */ = {
+		72DD79D1091AA0ED00EE4DEA /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -6001,7 +6045,7 @@
 			};
 			name = Development;
 		};
-		725B05BE0A0032CF000FE99A /* Deployment */ = {
+		72DD79D2091AA0ED00EE4DEA /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
@@ -6025,7 +6069,7 @@
 			};
 			name = Deployment;
 		};
-		725B05BF0A0032CF000FE99A /* Default */ = {
+		72DD79D3091AA0ED00EE4DEA /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "";
@@ -6044,7 +6088,7 @@
 			};
 			name = Default;
 		};
-		725B05C10A0032CF000FE99A /* Development */ = {
+		72DD79D5091AA0ED00EE4DEA /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -6071,7 +6115,7 @@
 			};
 			name = Development;
 		};
-		725B05C20A0032CF000FE99A /* Deployment */ = {
+		72DD79D6091AA0ED00EE4DEA /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
@@ -6093,7 +6137,7 @@
 			};
 			name = Deployment;
 		};
-		725B05C30A0032CF000FE99A /* Default */ = {
+		72DD79D7091AA0ED00EE4DEA /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "";
@@ -6110,7 +6154,7 @@
 			};
 			name = Default;
 		};
-		725B05C50A0032CF000FE99A /* Development */ = {
+		72DD79D9091AA0ED00EE4DEA /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -6138,7 +6182,7 @@
 			};
 			name = Development;
 		};
-		725B05C60A0032CF000FE99A /* Deployment */ = {
+		72DD79DA091AA0ED00EE4DEA /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
@@ -6162,7 +6206,7 @@
 			};
 			name = Deployment;
 		};
-		725B05C70A0032CF000FE99A /* Default */ = {
+		72DD79DB091AA0ED00EE4DEA /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_DYNAMIC_NO_PIC = YES;
@@ -6181,7 +6225,7 @@
 			};
 			name = Default;
 		};
-		725B05C90A0032CF000FE99A /* Development */ = {
+		72DD79DD091AA0ED00EE4DEA /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
@@ -6210,7 +6254,7 @@
 			};
 			name = Development;
 		};
-		725B05CA0A0032CF000FE99A /* Deployment */ = {
+		72DD79DE091AA0ED00EE4DEA /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = YES;
@@ -6235,7 +6279,7 @@
 			};
 			name = Deployment;
 		};
-		725B05CB0A0032CF000FE99A /* Default */ = {
+		72DD79DF091AA0ED00EE4DEA /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
@@ -6255,19 +6299,19 @@
 			};
 			name = Default;
 		};
-		725B05CD0A0032CF000FE99A /* Development */ = {
+		72DD79E1091AA0ED00EE4DEA /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
 			name = Development;
 		};
-		725B05CE0A0032CF000FE99A /* Deployment */ = {
+		72DD79E2091AA0ED00EE4DEA /* Deployment */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
 			name = Deployment;
 		};
-		725B05CF0A0032CF000FE99A /* Default */ = {
+		72DD79E3091AA0ED00EE4DEA /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 			};
@@ -6276,312 +6320,312 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		725B05540A0032CF000FE99A /* Build configuration list for PBXNativeTarget "InstallHeaders" */ = {
+		72DD7968091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "InstallHeaders" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				725B05550A0032CF000FE99A /* Development */,
-				725B05560A0032CF000FE99A /* Deployment */,
-				725B05570A0032CF000FE99A /* Default */,
+				72DD7969091AA0ED00EE4DEA /* Development */,
+				72DD796A091AA0ED00EE4DEA /* Deployment */,
+				72DD796B091AA0ED00EE4DEA /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Default;
 		};
-		725B05580A0032CF000FE99A /* Build configuration list for PBXNativeTarget "pppd (Tool)" */ = {
+		72DD796C091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "pppd (Tool)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				725B05590A0032CF000FE99A /* Development */,
-				725B055A0A0032CF000FE99A /* Deployment */,
-				725B055B0A0032CF000FE99A /* Default */,
+				72DD796D091AA0ED00EE4DEA /* Development */,
+				72DD796E091AA0ED00EE4DEA /* Deployment */,
+				72DD796F091AA0ED00EE4DEA /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Default;
 		};
-		725B055C0A0032CF000FE99A /* Build configuration list for PBXNativeTarget "vpnd (Tool)" */ = {
+		72DD7970091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "vpnd (Tool)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				725B055D0A0032CF000FE99A /* Development */,
-				725B055E0A0032CF000FE99A /* Deployment */,
-				725B055F0A0032CF000FE99A /* Default */,
+				72DD7971091AA0ED00EE4DEA /* Development */,
+				72DD7972091AA0ED00EE4DEA /* Deployment */,
+				72DD7973091AA0ED00EE4DEA /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Default;
 		};
-		725B05600A0032CF000FE99A /* Build configuration list for PBXNativeTarget "MiniTerm (Application)" */ = {
+		72DD7974091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "MiniTerm (Application)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				725B05610A0032CF000FE99A /* Development */,
-				725B05620A0032CF000FE99A /* Deployment */,
-				725B05630A0032CF000FE99A /* Default */,
+				72DD7975091AA0ED00EE4DEA /* Development */,
+				72DD7976091AA0ED00EE4DEA /* Deployment */,
+				72DD7977091AA0ED00EE4DEA /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Default;
 		};
-		725B05640A0032CF000FE99A /* Build configuration list for PBXNativeTarget "chat (Tool)" */ = {
+		72DD7978091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "chat (Tool)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				725B05650A0032CF000FE99A /* Development */,
-				725B05660A0032CF000FE99A /* Deployment */,
-				725B05670A0032CF000FE99A /* Default */,
+				72DD7979091AA0ED00EE4DEA /* Development */,
+				72DD797A091AA0ED00EE4DEA /* Deployment */,
+				72DD797B091AA0ED00EE4DEA /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Default;
 		};
-		725B05680A0032CF000FE99A /* Build configuration list for PBXAggregateTarget "Helpers (Aggregate)" */ = {
+		72DD797C091AA0ED00EE4DEA /* Build configuration list for PBXAggregateTarget "Helpers (Aggregate)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				725B05690A0032CF000FE99A /* Development */,
-				725B056A0A0032CF000FE99A /* Deployment */,
-				725B056B0A0032CF000FE99A /* Default */,
+				72DD797D091AA0ED00EE4DEA /* Development */,
+				72DD797E091AA0ED00EE4DEA /* Deployment */,
+				72DD797F091AA0ED00EE4DEA /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Default;
 		};
-		725B056C0A0032CF000FE99A /* Build configuration list for PBXNativeTarget "PPPDialogs (Plugin)" */ = {
+		72DD7980091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "PPPDialogs (Plugin)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				725B056D0A0032CF000FE99A /* Development */,
-				725B056E0A0032CF000FE99A /* Deployment */,
-				725B056F0A0032CF000FE99A /* Default */,
+				72DD7981091AA0ED00EE4DEA /* Development */,
+				72DD7982091AA0ED00EE4DEA /* Deployment */,
+				72DD7983091AA0ED00EE4DEA /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Default;
 		};
-		725B05700A0032CF000FE99A /* Build configuration list for PBXNativeTarget "PPPController (Bundle)" */ = {
+		72DD7984091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "PPPController (Bundle)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				725B05710A0032CF000FE99A /* Development */,
-				725B05720A0032CF000FE99A /* Deployment */,
-				725B05730A0032CF000FE99A /* Default */,
+				72DD7985091AA0ED00EE4DEA /* Development */,
+				72DD7986091AA0ED00EE4DEA /* Deployment */,
+				72DD7987091AA0ED00EE4DEA /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Default;
 		};
-		725B05740A0032CF000FE99A /* Build configuration list for PBXNativeTarget "PPP (Kernel Extension)" */ = {
+		72DD7988091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "PPP (Kernel Extension)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				725B05750A0032CF000FE99A /* Development */,
-				725B05760A0032CF000FE99A /* Deployment */,
-				725B05770A0032CF000FE99A /* Default */,
+				72DD7989091AA0ED00EE4DEA /* Development */,
+				72DD798A091AA0ED00EE4DEA /* Deployment */,
+				72DD798B091AA0ED00EE4DEA /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Default;
 		};
-		725B05780A0032CF000FE99A /* Build configuration list for PBXNativeTarget "PPPSerial (Plugin)" */ = {
+		72DD798C091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "PPPSerial (Plugin)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				725B05790A0032CF000FE99A /* Development */,
-				725B057A0A0032CF000FE99A /* Deployment */,
-				725B057B0A0032CF000FE99A /* Default */,
+				72DD798D091AA0ED00EE4DEA /* Development */,
+				72DD798E091AA0ED00EE4DEA /* Deployment */,
+				72DD798F091AA0ED00EE4DEA /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Default;
 		};
-		725B057C0A0032CF000FE99A /* Build configuration list for PBXNativeTarget "PPPoE (VPN Plugin)" */ = {
+		72DD7990091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "PPPoE (VPN Plugin)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				725B057D0A0032CF000FE99A /* Development */,
-				725B057E0A0032CF000FE99A /* Deployment */,
-				725B057F0A0032CF000FE99A /* Default */,
+				72DD7991091AA0ED00EE4DEA /* Development */,
+				72DD7992091AA0ED00EE4DEA /* Deployment */,
+				72DD7993091AA0ED00EE4DEA /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Default;
 		};
-		725B05800A0032CF000FE99A /* Build configuration list for PBXNativeTarget "PPPoE (Kernel Extension)" */ = {
+		72DD7994091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "PPPoE (Kernel Extension)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				725B05810A0032CF000FE99A /* Development */,
-				725B05820A0032CF000FE99A /* Deployment */,
-				725B05830A0032CF000FE99A /* Default */,
+				72DD7995091AA0ED00EE4DEA /* Development */,
+				72DD7996091AA0ED00EE4DEA /* Deployment */,
+				72DD7997091AA0ED00EE4DEA /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Default;
 		};
-		725B05840A0032CF000FE99A /* Build configuration list for PBXNativeTarget "PPPoE (Plugin)" */ = {
+		72DD7998091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "PPPoE (Plugin)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				725B05850A0032CF000FE99A /* Development */,
-				725B05860A0032CF000FE99A /* Deployment */,
-				725B05870A0032CF000FE99A /* Default */,
+				72DD7999091AA0ED00EE4DEA /* Development */,
+				72DD799A091AA0ED00EE4DEA /* Deployment */,
+				72DD799B091AA0ED00EE4DEA /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Default;
 		};
-		725B05880A0032CF000FE99A /* Build configuration list for PBXNativeTarget "PPTP (Kernel Extension)" */ = {
+		72DD799C091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "PPTP (Kernel Extension)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				725B05890A0032CF000FE99A /* Development */,
-				725B058A0A0032CF000FE99A /* Deployment */,
-				725B058B0A0032CF000FE99A /* Default */,
+				72DD799D091AA0ED00EE4DEA /* Development */,
+				72DD799E091AA0ED00EE4DEA /* Deployment */,
+				72DD799F091AA0ED00EE4DEA /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Default;
 		};
-		725B058C0A0032CF000FE99A /* Build configuration list for PBXNativeTarget "PPTP (VPN Plugin)" */ = {
+		72DD79A0091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "PPTP (VPN Plugin)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				725B058D0A0032CF000FE99A /* Development */,
-				725B058E0A0032CF000FE99A /* Deployment */,
-				725B058F0A0032CF000FE99A /* Default */,
+				72DD79A1091AA0ED00EE4DEA /* Development */,
+				72DD79A2091AA0ED00EE4DEA /* Deployment */,
+				72DD79A3091AA0ED00EE4DEA /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Default;
 		};
-		725B05900A0032CF000FE99A /* Build configuration list for PBXNativeTarget "PPTP (Plugin)" */ = {
+		72DD79A4091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "PPTP (Plugin)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				725B05910A0032CF000FE99A /* Development */,
-				725B05920A0032CF000FE99A /* Deployment */,
-				725B05930A0032CF000FE99A /* Default */,
+				72DD79A5091AA0ED00EE4DEA /* Development */,
+				72DD79A6091AA0ED00EE4DEA /* Deployment */,
+				72DD79A7091AA0ED00EE4DEA /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Default;
 		};
-		725B05940A0032CF000FE99A /* Build configuration list for PBXNativeTarget "L2TP (Kernel Extension)" */ = {
+		72DD79A8091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "L2TP (Kernel Extension)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				725B05950A0032CF000FE99A /* Development */,
-				725B05960A0032CF000FE99A /* Deployment */,
-				725B05970A0032CF000FE99A /* Default */,
+				72DD79A9091AA0ED00EE4DEA /* Development */,
+				72DD79AA091AA0ED00EE4DEA /* Deployment */,
+				72DD79AB091AA0ED00EE4DEA /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Default;
 		};
-		725B05980A0032CF000FE99A /* Build configuration list for PBXNativeTarget "L2TP (VPN Plugin)" */ = {
+		72DD79AC091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "L2TP (VPN Plugin)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				725B05990A0032CF000FE99A /* Development */,
-				725B059A0A0032CF000FE99A /* Deployment */,
-				725B059B0A0032CF000FE99A /* Default */,
+				72DD79AD091AA0ED00EE4DEA /* Development */,
+				72DD79AE091AA0ED00EE4DEA /* Deployment */,
+				72DD79AF091AA0ED00EE4DEA /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Default;
 		};
-		725B059C0A0032CF000FE99A /* Build configuration list for PBXNativeTarget "L2TP (Plugin)" */ = {
+		72DD79B0091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "L2TP (Plugin)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				725B059D0A0032CF000FE99A /* Development */,
-				725B059E0A0032CF000FE99A /* Deployment */,
-				725B059F0A0032CF000FE99A /* Default */,
+				72DD79B1091AA0ED00EE4DEA /* Development */,
+				72DD79B2091AA0ED00EE4DEA /* Deployment */,
+				72DD79B3091AA0ED00EE4DEA /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Default;
 		};
-		725B05A00A0032CF000FE99A /* Build configuration list for PBXAggregateTarget "Drivers (Aggregate)" */ = {
+		72DD79B4091AA0ED00EE4DEA /* Build configuration list for PBXAggregateTarget "Drivers (Aggregate)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				725B05A10A0032CF000FE99A /* Development */,
-				725B05A20A0032CF000FE99A /* Deployment */,
-				725B05A30A0032CF000FE99A /* Default */,
+				72DD79B5091AA0ED00EE4DEA /* Development */,
+				72DD79B6091AA0ED00EE4DEA /* Deployment */,
+				72DD79B7091AA0ED00EE4DEA /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Default;
 		};
-		725B05A40A0032CF000FE99A /* Build configuration list for PBXNativeTarget "DSACL (Plugin)" */ = {
+		72DD79B8091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "DSACL (Plugin)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				725B05A50A0032CF000FE99A /* Development */,
-				725B05A60A0032CF000FE99A /* Deployment */,
-				725B05A70A0032CF000FE99A /* Default */,
+				72DD79B9091AA0ED00EE4DEA /* Development */,
+				72DD79BA091AA0ED00EE4DEA /* Deployment */,
+				72DD79BB091AA0ED00EE4DEA /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Default;
 		};
-		725B05A80A0032CF000FE99A /* Build configuration list for PBXNativeTarget "DSAuth (Plugin)" */ = {
+		72DD79BC091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "DSAuth (Plugin)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				725B05A90A0032CF000FE99A /* Development */,
-				725B05AA0A0032CF000FE99A /* Deployment */,
-				725B05AB0A0032CF000FE99A /* Default */,
+				72DD79BD091AA0ED00EE4DEA /* Development */,
+				72DD79BE091AA0ED00EE4DEA /* Deployment */,
+				72DD79BF091AA0ED00EE4DEA /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Default;
 		};
-		725B05AC0A0032CF000FE99A /* Build configuration list for PBXNativeTarget "Radius (Plugin)" */ = {
+		72DD79C0091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "Radius (Plugin)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				725B05AD0A0032CF000FE99A /* Development */,
-				725B05AE0A0032CF000FE99A /* Deployment */,
-				725B05AF0A0032CF000FE99A /* Default */,
+				72DD79C1091AA0ED00EE4DEA /* Development */,
+				72DD79C2091AA0ED00EE4DEA /* Deployment */,
+				72DD79C3091AA0ED00EE4DEA /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Default;
 		};
-		725B05B00A0032CF000FE99A /* Build configuration list for PBXNativeTarget "EAP-TLS (Plugin)" */ = {
+		72DD79C4091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "EAP-TLS (Plugin)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				725B05B10A0032CF000FE99A /* Development */,
-				725B05B20A0032CF000FE99A /* Deployment */,
-				725B05B30A0032CF000FE99A /* Default */,
+				72DD79C5091AA0ED00EE4DEA /* Development */,
+				72DD79C6091AA0ED00EE4DEA /* Deployment */,
+				72DD79C7091AA0ED00EE4DEA /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Default;
 		};
-		725B05B40A0032CF000FE99A /* Build configuration list for PBXNativeTarget "EAP-KRB (Plugin)" */ = {
+		72DD79C8091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "EAP-KRB (Plugin)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				725B05B50A0032CF000FE99A /* Development */,
-				725B05B60A0032CF000FE99A /* Deployment */,
-				725B05B70A0032CF000FE99A /* Default */,
+				72DD79C9091AA0ED00EE4DEA /* Development */,
+				72DD79CA091AA0ED00EE4DEA /* Deployment */,
+				72DD79CB091AA0ED00EE4DEA /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Default;
 		};
-		725B05B80A0032CF000FE99A /* Build configuration list for PBXAggregateTarget "Authenticators (Aggregate)" */ = {
+		72DD79CC091AA0ED00EE4DEA /* Build configuration list for PBXAggregateTarget "Authenticators (Aggregate)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				725B05B90A0032CF000FE99A /* Development */,
-				725B05BA0A0032CF000FE99A /* Deployment */,
-				725B05BB0A0032CF000FE99A /* Default */,
+				72DD79CD091AA0ED00EE4DEA /* Development */,
+				72DD79CE091AA0ED00EE4DEA /* Deployment */,
+				72DD79CF091AA0ED00EE4DEA /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Default;
 		};
-		725B05BC0A0032CF000FE99A /* Build configuration list for PBXAggregateTarget "SampleCode (Aggregate)" */ = {
+		72DD79D0091AA0ED00EE4DEA /* Build configuration list for PBXAggregateTarget "SampleCode (Aggregate)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				725B05BD0A0032CF000FE99A /* Development */,
-				725B05BE0A0032CF000FE99A /* Deployment */,
-				725B05BF0A0032CF000FE99A /* Default */,
+				72DD79D1091AA0ED00EE4DEA /* Development */,
+				72DD79D2091AA0ED00EE4DEA /* Deployment */,
+				72DD79D3091AA0ED00EE4DEA /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Default;
 		};
-		725B05C00A0032CF000FE99A /* Build configuration list for PBXAggregateTarget "ppp (Aggregate)" */ = {
+		72DD79D4091AA0ED00EE4DEA /* Build configuration list for PBXAggregateTarget "ppp (Aggregate)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				725B05C10A0032CF000FE99A /* Development */,
-				725B05C20A0032CF000FE99A /* Deployment */,
-				725B05C30A0032CF000FE99A /* Default */,
+				72DD79D5091AA0ED00EE4DEA /* Development */,
+				72DD79D6091AA0ED00EE4DEA /* Deployment */,
+				72DD79D7091AA0ED00EE4DEA /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Default;
 		};
-		725B05C40A0032CF000FE99A /* Build configuration list for PBXNativeTarget "pppstats (Tool)" */ = {
+		72DD79D8091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "pppstats (Tool)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				725B05C50A0032CF000FE99A /* Development */,
-				725B05C60A0032CF000FE99A /* Deployment */,
-				725B05C70A0032CF000FE99A /* Default */,
+				72DD79D9091AA0ED00EE4DEA /* Development */,
+				72DD79DA091AA0ED00EE4DEA /* Deployment */,
+				72DD79DB091AA0ED00EE4DEA /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Default;
 		};
-		725B05C80A0032CF000FE99A /* Build configuration list for PBXNativeTarget "to_delete" */ = {
+		72DD79DC091AA0ED00EE4DEA /* Build configuration list for PBXNativeTarget "to_delete" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				725B05C90A0032CF000FE99A /* Development */,
-				725B05CA0A0032CF000FE99A /* Deployment */,
-				725B05CB0A0032CF000FE99A /* Default */,
+				72DD79DD091AA0ED00EE4DEA /* Development */,
+				72DD79DE091AA0ED00EE4DEA /* Deployment */,
+				72DD79DF091AA0ED00EE4DEA /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Default;
 		};
-		725B05CC0A0032CF000FE99A /* Build configuration list for PBXProject "ppp" */ = {
+		72DD79E0091AA0ED00EE4DEA /* Build configuration list for PBXProject "ppp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				725B05CD0A0032CF000FE99A /* Development */,
-				725B05CE0A0032CF000FE99A /* Deployment */,
-				725B05CF0A0032CF000FE99A /* Default */,
+				72DD79E1091AA0ED00EE4DEA /* Development */,
+				72DD79E2091AA0ED00EE4DEA /* Deployment */,
+				72DD79E3091AA0ED00EE4DEA /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Default;

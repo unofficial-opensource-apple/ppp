@@ -41,7 +41,7 @@
  * WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
  */
 
-#define RCSID	"$Id: acscp.c,v 1.9.56.1 2006/02/09 06:27:43 lindak Exp $"
+#define RCSID	"$Id: acscp.c,v 1.12 2006/03/01 01:07:44 lindak Exp $"
 
 
 #include <stdio.h>
@@ -118,6 +118,9 @@ struct notifier *acsp_down_notifier = NULL;
 bool	acsp_no_routes;
 bool	acsp_no_domains;
 
+bool	acsp_use_dhcp;
+bool	acsp_intercept_dhcp;
+
 
 //
 // Callbacks for fsm code.  (CI = Configuration Information)
@@ -170,6 +173,14 @@ static option_t acscp_option_list[] = {
     { "acscp-max-failure", o_int, &acscp_fsm[0].maxnakloops,
       "Set max #conf-naks for acscp", OPT_PRIO },
       
+    { "intercept-dhcp", o_bool, &acsp_intercept_dhcp,
+      "Intercept dhcp client requests", 1 },
+    { "no-intercept-dhcp", o_bool, &acsp_intercept_dhcp,
+      "Intercept dhcp client requests", 0 },
+    { "use-dhcp", o_bool, &acsp_use_dhcp,
+      "Send dhcp request", 1 },
+    { "no-use-dhcp", o_bool, &acsp_use_dhcp,
+      "Send dhcp request", 0 },
     { NULL }
 };
 
@@ -209,7 +220,8 @@ struct protent acscp_protent = {
     NULL,
     NULL,
     NULL,
-    acscp_state
+    acscp_state,
+    NULL
 };
 
 
@@ -251,8 +263,13 @@ acscp_init(int unit)
 static void
 acscp_check_options(void)
 {
-    if (acscp_protent.enabled_flag)
+    if (acscp_protent.enabled_flag || acsp_use_dhcp || acsp_intercept_dhcp)
         add_notifier(&phasechange, acsp_init_plugins, 0);    // to setup plugins
+
+	if (acsp_intercept_dhcp)
+		ip_src_address_filter |= NPAFMODE_DHCP_INTERCEPT_SERVER;
+	if (acsp_use_dhcp)
+		ip_src_address_filter |= NPAFMODE_DHCP_INTERCEPT_CLIENT;
 }
 
 
@@ -810,7 +827,6 @@ acscp_finished(f)
 {
     np_finished(f->unit, PPP_ACSP);
 }
-
 
 
 #if 0

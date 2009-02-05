@@ -224,9 +224,9 @@ int pptp_outgoing_call(int fd,
             return EXIT_PPTP_PROTOCOLERROR;
         return -1;
     }
-    if (ctl_reply.result_code != PPTP_RESULT_SUCCESS) {
+    if (ctl_reply.result_code != PPTP_RESULT_SUCCESS && ctl_reply.result_code != 0 /* radar 4395192 */) {
         error("PPTP start_connection_control request failed, got result = %d, error = %d\n", ctl_reply.result_code, ctl_reply.error_code);
-        return EXIT_PPTP_STARTFAILED;
+        return EXIT_PPTP_PROTOCOLERROR;
     }
 
     /* send the outgoing call request */
@@ -255,7 +255,7 @@ int pptp_outgoing_call(int fd,
     }
     if (out_reply.result_code != PPTP_OUTGOING_CALL_RESULT_CONNECTED) {
         error("PPTP outgoing_call request failed, got result = %d, error = %d\n", out_reply.result_code, out_reply.error_code);
-        return EXIT_PPTP_STARTFAILED;
+        return EXIT_PPTP_PROTOCOLERROR;
     }
 
     /* call succedeed ! */
